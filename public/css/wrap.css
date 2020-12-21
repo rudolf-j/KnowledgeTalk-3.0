@@ -1,0 +1,45 @@
+#printBox {
+  word-break: break-all;
+  overflow-y:scroll;
+  height:200px;
+  width:100%;
+  border : 1px solid black;
+  margin-top: 10px;
+}
+
+#chat_Box {
+  word-break: break-all;
+  overflow-y:scroll;
+  height:150px;
+  width:50%;
+  border : 1px solid black;
+  margin-top: 10px;
+  display : none;
+}
+
+.message{
+  word-break: break-all;
+  overflow-y:scroll;
+  width:100%;
+  height:60px;
+  border : 1px solid black;
+  margin-top: 20px;
+}
+.login_message{
+  word-break: break-all;
+  height:100%;
+  width:100%;
+  border : 1px solid black;
+  margin-top: 20px;
+}
+/* style="height:100%; width:100%; border : 1px solid black; margin-top: 10px; */
+.titlebox{
+  height:100%;
+  width:100%;
+  border : 1px solid black;
+  margin-top: 10px;
+}
+.video{
+  width: 50%;
+  height: 50%;
+}

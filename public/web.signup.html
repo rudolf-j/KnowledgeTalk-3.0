@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/wrap.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="titlebox">
+    <div class='signup'>
+      id : <input id='inputId'> <br />
+      pw : <input id='inputPw' type='password'> <br />
+      name : <input id='inputName'> <br />
+      <button id='signupBtn'> 회원가입 </button>
+    </div>
+  </div>
+
+  <!-- 메시지 -->
+  <div class='message'>
+    <div id='text_print_Box'></div>
+  </div>
+
+  <!-- 로그 -->
+  <div id='printBox' class='printBox'></div>
+
+  <script src='https://dev.knowledgetalk.co.kr:7101/socket.io/socket.io.js'></script>
+  <script src='./lib/common.js'></script>
+  <script src='./js/web.signup.js'></script>
+</body>
+
+</html>
