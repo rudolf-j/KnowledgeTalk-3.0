@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+  <meta charset='UTF-8' />
+  <meta name='viewport' content='width=device-width, initial-scale=1.0' />
+  <link rel="stylesheet" href="./css/wrap.css">
+  <title>RTC Test Web</title>
+</head>
+
+<body>
+    <div class='login'>
+      <input type='hidden' id='inputId' value='a11' /> <br />
+      <input type='hidden' id='inputPw' type='password' value='a' /> <br />
+      <button id='loginBtn'>로그인</button>
+      <button id='callBtn' hidden disabled>회의초대</button>
+      <button id='joinBtn' disabled>회의참여</button>
+      <button id='exitBtn' disabled>회의종료</button>
+      <button id='memberBtn' disabled>참가자확인</button>
+    </div>
+
+  <!-- 결과 메시지 -->
+  <div class='login_message'>
+    <div id='text_print_Box'></div>
+  </div>
+
+  <div class='message'>
+    참가자 명단
+    <div id='memberlist'></div>
+  </div>
+
+  <!-- 로그 -->
+  <div id='printBox' class='printBox'></div>
+
+  <!-- 시그널 주소 -->
+  <script src='https://dev.knowledgetalk.co.kr:7101/socket.io/socket.io.js'></script>
+  <script src='./lib/common.js'></script>
+  <script src='./js/web.call.list.target.js'></script>
+</body>
+</html>
