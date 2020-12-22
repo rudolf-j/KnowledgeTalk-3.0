@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset='UTF-8' />
+    <meta name='viewport' content='width=device-width, initial-scale=1.0' />
+    <link rel= "stylesheet" href="./css/wrap.css">
+    <title>Sample Consulting Web</title>
+  </head>
+  <body>
+    <div class='login'>
+      id : <input id='inputId' value='testuser' /> <br />
+      pw : <input id='inputPw' type='password' value='test01' /> <br />
+      <button id='loginBtn'>로그인</button>
+      <button id='joinBtn' disabled>전화받기</button>
+    </div>
+
+    <video id='localVideo' style="width: 50%" autoplay muted></video>
+    <video id='remoteVideo' style="width: 50%" autoplay></video> <br />
+
+    <!-- 메시지 -->
+    <div class='message'>
+      <div id='text_print_Box'></div>
+    </div>
+
+    <!-- 로그 -->
+    <div id='printBox'></div>
+
+    <canvas id='remoteDoc'></canvas>
+
+    <script src='https://webrtchacks.github.io/adapter/adapter-latest.js'></script>
+    <script src='https://dev.knowledgetalk.co.kr:7101/socket.io/socket.io.js'></script>
+    <script src='./lib/common.js'></script>
+    <script src='./js/web.doc.share.target.js'></script>
+  </body>
+</html>
