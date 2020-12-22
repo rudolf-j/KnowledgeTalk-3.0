@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset='UTF-8' />
+    <meta name='viewport' content='width=device-width, initial-scale=1.0' />
+    <title>Sample Consulting Web</title>
+    <link rel= "stylesheet" href="./css/wrap.css">
+    <script src='https://dev.knowledgetalk.co.kr:7101/socket.io/socket.io.js'></script>
+    <script src='./lib/common.js'></script>
+    <script src='./js/web.screen.share-janus.js'></script>
+  </head>
+  <body>
+    <div class='login'>
+      <input type='hidden' id='inputId' value='a6' /> <br />
+      <input type='hidden' id='inputPw' type='password' value='a' /> <br />
+      <button id='loginBtn'>로그인</button>
+      <button id='callBtn' hidden disabled>회의초대</button>
+      <button id='joinBtn' disabled>회의참여</button>
+      <button id='shareBtn' disabled>화면공유</button>
+      <button id='exitBtn' disabled>회의종료</button>
+    </div>
+    <div class='video-box' id='VideoBox'>
+      <dl class='video-twobytwo' id='VIDEOONETOMANY'>
+
+      </dl>
+    </div>
+
+    <div class='screen-video-wrap' id='ScreenSharingVideo'>
+
+      <div class='screen-video' id='screen-share-video'>
+
+      </div>
+    </div>
+    <!-- 메시지 -->
+    <div class='message'>
+      <div id='text_print_Box'></div>
+    </div>
+    <!-- 로그 -->
+    <div id='printBox' class='printBox'></div>
+  </body>
+</html>
