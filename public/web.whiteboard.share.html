@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang='ko'>
+
+<head>
+  <meta charset='UTF-8' />
+  <meta name='viewport' content='width=device-width, initial-scale=1.0' />
+  <link rel="stylesheet" href="./css/wrap.css">
+  <title>Sample Consulting Web</title>
+</head>
+
+<body>
+  <div class="titlebox">
+    <div class='login'>
+      id : <input id='inputId' value='testconsult' /> <br />
+      pw : <input id='inputPw' type='password' value='test01' /> <br />
+      target : <input id='inputTarget' value='testuser' /> <br />
+      <button id='loginBtn'>로그인</button>
+      <button id='callBtn' disabled>전화걸기</button>
+      <button id='whiteboardBtn' disabled>화이트보드</button>
+      <button id='whiteboardClearBtn' disabled>지우기</button><br />
+      <button id='blackPen' style="color: black;" disabled>Black</button>
+      <button id='redPen' style="color: red;" disabled>Red</button>
+      <button id='bluePen' style="color: #0000ff;" disabled>blue</button>
+    </div>
+  </div>
+
+  <canvas id='whiteboard' width='300' height='300' style='display: none; border: solid black 1px;'></canvas><br />
+
+  <video id='localVideo' autoplay muted style='height: 100px;'></video>
+  <video id='remoteVideo' autoplay style='height: 100px;'></video>
+
+  <div class='message'>
+    <div id='text_print_Box'></div>
+  </div>
+
+  <!--로그-->
+  <div id='printBox'> </div>
+
+  <script src='https://dev.knowledgetalk.co.kr:7101/socket.io/socket.io.js'></script>
+  <script src='./lib/common.js'></script>
+  <script src='./js/web.whiteboard.share.js'></script>
+</body>
+
+</html>
