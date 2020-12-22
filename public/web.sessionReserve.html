@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang='ko'>
+
+<head>
+  <meta charset='UTF-8' />
+  <meta name='viewport' content='width=device-width, initial-scale=1.0' />
+  <title>Sample Consulting Web</title>
+  <link rel="stylesheet" href="./css/wrap.css">
+  <script src='https://dev.knowledgetalk.co.kr:7101/socket.io/socket.io.js'></script>
+  <script src='../lib/common.js'></script>
+  <script src='js/web.sessionReserve.js'></script>
+</head>
+
+<body>
+  <div class='login'>
+    <input type='hidden' id='inputId' value='a1' /> <br />
+    <input type='hidden' id='inputPw' type='password' value='a' />
+    <br />
+    <button id='loginBtn'>로그인</button>
+    <button id='callBtn' disabled>회의초대</button>
+    <button id='joinBtn' disabled>회의참여</button>
+    <button id='exitBtn' hidden disabled>회의종료</button>
+    <button id='sessionBtn' disabled>공유자원 예약</button>
+    <button id='sessionCancelBtn' disabled>공유자원 예약취소</button>
+  </div>
+  <video id='multiVideo' autoplay style='object-fit: fill;'></video>
+  <div class='message'>
+    <div id='text_print_Box'></div>
+  </div>
+  <!-- 로그 -->
+  <div id='printBox' class='printBox'></div>
+</body>
+
+</html>
