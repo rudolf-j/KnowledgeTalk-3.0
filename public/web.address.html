@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/wrap.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="titlebox">
+    <div style="margin-block-end: 5px; margin-top: 5px;">주소록</div>
+    <div class='login'>
+      id : <input id='inputId' value='apple'><br />
+      pw : <input id='inputPw' type='password' value='apple'><br />
+      target : <input id='inputTarget' value='melon' /><br />
+      <button id='LoginBtn'>로그인</button>
+      <button id='listBtn' disabled>조회</button>
+      <button id='searchBtn' disabled>검색</button>
+      <button id='addBtn' disabled>친구추가</button>
+      <button id='delBtn' disabled>친구삭제</button>
+      <div id='memberList'></div>
+    </div>
+  </div>
+
+  <!-- 메시지 -->
+  <div class='message' style="height: 120px;">
+    <div id='text_print_Box'></div>
+    <div id='chat_Box'></div>
+  </div>
+
+  <!-- 로그 -->
+  <div id='printBox' class='printBox'></div>
+
+  <script src='https://dev.knowledgetalk.co.kr:7101/socket.io/socket.io.js'></script>
+  <script src='./lib/common.js'></script>
+  <script src='./js/web.address.js'></script>
+
+</body>
+
+</html>

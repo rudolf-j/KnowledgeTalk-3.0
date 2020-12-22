@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv='X-UA-compatible' content='ie=edge'>
+  <title>Sample Consulting Web</title>
+  <script src='https://dev.knowledgetalk.co.kr:7101/socket.io/socket.io.js'></script>  
+  <script src='./lib/common.js'></script>
+  <script src='./js/web.call.js'></script>
+</head>
+<body>
+  <div style="height: 100%; width: 100%; border: 1px solid black; margin-top: 10px;">
+    <div style="margin-block-end: 5px; margin-top: 5px">정보</div>
+    <div class="login">
+      id: <input type="text" id="inputid" value="melon"><br>
+      pw: <input type="password" id="inputpw" value="melon"><br>
+      target: <input type="text" id="inputTarget" value="apple"><br>
+      <button id="loginBtn">로그인</button>
+      <button id="callBtn" disabled>전화걸기</button>
+      <button id="exitBtn" disabled>통화종료</button>
+    </div>
+  </div>
+
+  <div class="message">
+    <div id="text_print_Box"></div>
+  </div>
+
+  localVideo<br>
+  <video id="localVideo" autoplay muted style="height: 100px;"></video><br>
+  remoteVideo<br>
+  <video id="remoteVideo" autoplay style="height: 100px;"></video><br>
+
+  <div id="printBox" class="printBox"></div>
+</body>
+</html>
