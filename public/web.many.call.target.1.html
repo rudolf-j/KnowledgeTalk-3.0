@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang='ko'>
+
+<head>
+  <meta charset='UTF-8' />
+  <meta name='viewport' content='width=device-width, initial-scale=1.0' />
+  <link rel="stylesheet" href="./css/wrap.css">
+  <title>Sample Consulting Web</title>
+</head>
+
+<body>
+  <div style="height:100%; width:100%; border : 1px solid black; margin-top: 10px; ">
+    <div style="margin-block-end: 5px; margin-top: 5px;"></div>
+      <div class='login'>
+        <input type='hidden' id='inputId' value='apple' /> <br />
+        <input type='hidden' id='inputPw' type='password' value='apple' /> <br />
+        <button id='loginBtn'>로그인</button>
+        <button id='callBtn' disabled>회의초대</button>
+        <button id='joinBtn' disabled>회의참여</button>
+        <button id='exitBtn' disabled>회의종료</button>
+      </div>
+  </div>
+
+  <div class='message'>
+    <div id='text_print_Box'></div>
+  </div>
+
+  <div id='VIDEOONETOMANY'></div>
+
+  <!-- 로그 -->
+  <div id='printBox' class='printBox'></div>
+
+  <script src='https://dev.knowledgetalk.co.kr:7101/socket.io/socket.io.js'></script>
+  <script src='./lib/common.js'></script>
+  <script src='./js/web.many.call.js'></script>
+</body>
+</html>
